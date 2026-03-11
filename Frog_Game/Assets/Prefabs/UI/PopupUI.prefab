@@ -520,6 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0ea3281f0641e4e98ad7fbc23fe466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupUI
+  windowId: popupui
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0

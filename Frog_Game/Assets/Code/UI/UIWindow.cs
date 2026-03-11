@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class UIWindow : MonoBehaviour
 {
+    [Header("UI Window")]
+    [SerializeField] private string windowId;
     private void Awake()
     {
         
@@ -12,8 +14,12 @@ public class UIWindow : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Show()
+    {
+        
+    }
+
+    public virtual void Hide()
     {
         
     }
