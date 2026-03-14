@@ -521,6 +521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupUI
   windowId: popupui
+  canvas: {fileID: 8289295373892577892}
+  canvasGroup: {fileID: 5659011783816854385}
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0
