@@ -38,7 +38,7 @@ public class UiManager : MonoBehaviour
     public void ShowWindow(string windowId)
     {
         //var uiWindow = windows.Find(x => x.name == windowId);
-
+        //UIW
         foreach (UIWindow window in windows)
         {
             if (window.WindowId == windowId)
