@@ -38,14 +38,23 @@ public class UiManager : MonoBehaviour
     public void ShowWindow(string windowId)
     {
         //var uiWindow = windows.Find(x => x.name == windowId);
-        //UIW
+        UIWindow windowToShow = null;
         foreach (UIWindow window in windows)
         {
             if (window.WindowId == windowId)
             {
-                window.Show();
+                windowToShow = window;
                 return;
             }
+        }
+
+        if (windowToShow != null)
+        {
+            windowToShow.Show();
+        }
+        else
+        {
+            Debug.LogError($"No se encontro la ventana con ID {windowId}");
         }
         
         //if (windowToShow != null))
