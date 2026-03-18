@@ -29,17 +29,7 @@ public class UiManager : MonoBehaviour
     
     
 
-    [Button]
-    public void ShowPopup()
-    {
-        ShowWindow(WindowsIds.PopUI);
-    }
-
-    [Button]
-    public void ClosePopup()
-    {
-        CloseWindow(WindowsIds.PopUI);
-    }
+   
 
     private void FoundUIScene()
     {
