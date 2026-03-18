@@ -523,6 +523,7 @@ MonoBehaviour:
   windowId: popupui
   canvas: {fileID: 8289295373892577892}
   canvasGroup: {fileID: 5659011783816854385}
+  hideOnStart: 1
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,8 +628,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a315b79e7e441e42b90336a0e082912, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -3253947425131549102, guid: 8771b39be36df7e4aad21662f1a1a71e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

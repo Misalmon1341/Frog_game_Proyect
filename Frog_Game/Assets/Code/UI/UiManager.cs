@@ -4,12 +4,25 @@ using UnityEngine;
 
 public class UiManager : MonoBehaviour
 {
+    public static UiManager Instance { get; private set; }
     [SerializeField] private List<UIWindow> windows = new List<UIWindow>(); 
     void Start()
     {
         Initialize();
     }
 
+    private void Awake()
+    {
+        //Si ya existe la instancia y no es esta, destruir este objeto para mantener el singleton
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        //Asignar esta instancia unica de UIManager
+        Instance = this;
+    }
     private void Initialize()
     {
     }
@@ -19,7 +32,13 @@ public class UiManager : MonoBehaviour
     [Button]
     public void ShowPopup()
     {
-        ShowWindow("popupui");
+        ShowWindow(WindowsIds.PopUI);
+    }
+
+    [Button]
+    public void ClosePopup()
+    {
+        CloseWindow(WindowsIds.PopUI);
     }
 
     private void FoundUIScene()
@@ -44,7 +63,7 @@ public class UiManager : MonoBehaviour
             if (window.WindowId == windowId)
             {
                 windowToShow = window;
-                return;
+                break;
             }
         }
 
@@ -59,10 +78,38 @@ public class UiManager : MonoBehaviour
         
         //if (windowToShow != null))
     }
+    
+    public void CloseWindow(string windowId)
+    {
+        UIWindow windowToClose = null;
+        foreach (UIWindow window in windows)
+        {
+            if (window.WindowId == windowId)
+            {
+                windowToClose = window;
+            }
+        }
+
+        if (windowToClose != null)
+        {
+            windowToClose.Hide();
+        }
+        else
+        {
+            Debug.Log($"No se encontro la ventana con ID");
+        }
+    }
 
  
     void Update()
     {
         
     }
+}
+
+public static class WindowsIds
+{
+    public const string PopUI = "popupui";
+    public const string SettingsUI = "settingsui";
+    public const string InventoryUI =  "inventoryui";
 }
