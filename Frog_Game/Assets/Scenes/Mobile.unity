@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9433962
       objectReference: {fileID: 0}
+    - target: {fileID: 3060685937760533825, guid: 74b39f7f72a952f41810c7864acb3d6a, type: 3}
+      propertyPath: initialHeight
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 3697290809829727826, guid: 74b39f7f72a952f41810c7864acb3d6a, type: 3}
       propertyPath: m_Transition
       value: 2

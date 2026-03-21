@@ -524,6 +524,11 @@ MonoBehaviour:
   canvas: {fileID: 8289295373892577892}
   canvasGroup: {fileID: 5659011783816854385}
   hideOnStart: 1
+  duration: 1
+  easeIn: 26
+  easeOut: 27
+  rectTransformPopUi: {fileID: 5986185113471140070}
+  initialHeight: 500
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0

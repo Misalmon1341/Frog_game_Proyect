@@ -12,8 +12,16 @@ public class UIWindow : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
 
     [SerializeField] private bool hideOnStart = true;
-    private RectTransform rectTransformCanvasGroup => canvasGroup.GetComponent<RectTransform>();
+
+    [SerializeField] private float duration = 1f;
+
+    [SerializeField] private Ease easeIn = Ease.InBack;
+    [SerializeField] private Ease easeOut = Ease.OutBack;
+    public RectTransform rectTransformCanvasGroup => canvasGroup.GetComponent<RectTransform>();
     
+    public Ease EaseIn => easeIn;
+    public Ease EaseOut => easeOut;
+
     public string WindowId => windowId;
     
     private void Awake()
@@ -28,7 +36,7 @@ public class UIWindow : MonoBehaviour
     }
     
     
-    public void Initialize()
+    public virtual void Initialize()
     { 
         canvas.gameObject.SetActive(!hideOnStart);
         rectTransformCanvasGroup.localScale = Vector3.zero;
@@ -39,13 +47,13 @@ public class UIWindow : MonoBehaviour
     {
         //canvas.gameObject.SetActive(true);
         canvas.gameObject.SetActive(true);
-        rectTransformCanvasGroup.DOScale(Vector3.one, 0.5f);
+        rectTransformCanvasGroup.DOScale(Vector3.one, duration).SetEase(easeIn);
     }
     
     [Button]
     public virtual void Hide()
     {
-        rectTransformCanvasGroup.DOScale(Vector3.zero, 0.5f).OnComplete (() =>
+        rectTransformCanvasGroup.DOScale(Vector3.zero, duration).SetEase(easeOut).OnComplete (() =>
         {
             canvas.gameObject.SetActive(false);
         });
