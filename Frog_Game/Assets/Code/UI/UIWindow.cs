@@ -19,6 +19,8 @@ public class UIWindow : MonoBehaviour
     [SerializeField] private Ease easeOut = Ease.OutBack;
     public RectTransform rectTransformCanvasGroup => canvasGroup.GetComponent<RectTransform>();
     
+    public RectTransform rectTransformCanvas => canvas.GetComponent<RectTransform>();
+    
     public Ease EaseIn => easeIn;
     public Ease EaseOut => easeOut;
 

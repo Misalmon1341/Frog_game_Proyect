@@ -10,9 +10,12 @@ public class PopupUI : UIWindow
     private float _finaly;
     public override void Initialize()
     {
-       _initialy = rectTransformCanvasGroup.rect.height - rectTransformPopUi.rect.height ;
-        _finaly = rectTransformCanvasGroup.anchoredPosition.y ;
-        rectTransformPopUi.gameObject.SetActive(false);
+       _initialy = rectTransformCanvasGroup.rect.height + (rectTransformPopUi.rect.height) ;
+       _finaly = rectTransformCanvas.position.y;
+       
+       Debug.Log(_initialy);
+       Debug.Log(_finaly);
+        
         rectTransformPopUi.DOMoveY(_initialy,0);
     }
    public override void Show()
@@ -25,7 +28,7 @@ public class PopupUI : UIWindow
 
    public override void Hide()
    {
-       rectTransformPopUi.DOScale(_initialy,1.5f).SetEase(EaseOut).OnComplete(() =>{
+       rectTransformPopUi.DOScale(Vector3.zero,1.5f).SetEase(EaseOut).OnComplete(() =>{
 
            rectTransformPopUi.gameObject.SetActive(false);
         });
