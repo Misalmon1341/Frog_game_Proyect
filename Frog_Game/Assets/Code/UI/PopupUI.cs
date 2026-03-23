@@ -10,13 +10,13 @@ public class PopupUI : UIWindow
     private float _finaly;
     public override void Initialize()
     {
-       _initialy = rectTransformCanvasGroup.rect.height + (rectTransformPopUi.rect.height) ;
+       _initialy = rectTransformCanvasGroup.rect.height + (rectTransformPopUi.rect.height * 2) ;
        _finaly = rectTransformCanvas.position.y;
-       
+        
        Debug.Log(_initialy);
        Debug.Log(_finaly);
         
-        rectTransformPopUi.DOMoveY(_initialy,0);
+        rectTransformPopUi.DOMoveY(_initialy,0f);
     }
    public override void Show()
    {
