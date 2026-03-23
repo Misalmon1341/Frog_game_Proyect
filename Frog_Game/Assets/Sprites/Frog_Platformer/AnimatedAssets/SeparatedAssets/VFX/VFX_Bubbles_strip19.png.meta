@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: fd1bfae1f9f6f1a40b04547f3f693710
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5257188473260947370
+    second: VFX_Bubbles_strip19_0
+  - first:
+      213: 7462783115295595069
+    second: VFX_Bubbles_strip19_1
+  - first:
+      213: -8823515089664332673
+    second: VFX_Bubbles_strip19_2
+  - first:
+      213: 8959163031096176883
+    second: VFX_Bubbles_strip19_3
+  - first:
+      213: -9064411275653607768
+    second: VFX_Bubbles_strip19_4
+  - first:
+      213: 4572179399088418532
+    second: VFX_Bubbles_strip19_5
+  - first:
+      213: 2696224554644476585
+    second: VFX_Bubbles_strip19_6
+  - first:
+      213: -4234805663842112643
+    second: VFX_Bubbles_strip19_7
+  - first:
+      213: -8722492817370764563
+    second: VFX_Bubbles_strip19_8
+  - first:
+      213: 5770017398255224963
+    second: VFX_Bubbles_strip19_9
+  - first:
+      213: -633814378783738500
+    second: VFX_Bubbles_strip19_10
+  - first:
+      213: 211743949335728489
+    second: VFX_Bubbles_strip19_11
+  - first:
+      213: -5535503977192395808
+    second: VFX_Bubbles_strip19_12
+  - first:
+      213: 4339966869116516463
+    second: VFX_Bubbles_strip19_13
+  - first:
+      213: 8498190599300953331
+    second: VFX_Bubbles_strip19_14
+  - first:
+      213: -3436449168349437741
+    second: VFX_Bubbles_strip19_15
+  - first:
+      213: -5119637606179445632
+    second: VFX_Bubbles_strip19_16
+  - first:
+      213: -7518708355574442995
+    second: VFX_Bubbles_strip19_17
+  - first:
+      213: -5290478504164113953
+    second: VFX_Bubbles_strip19_18
+  - first:
+      213: -8181382847342821068
+    second: VFX_Bubbles_strip19_19
+  - first:
+      213: 2544916794656207607
+    second: VFX_Bubbles_strip19_20
+  - first:
+      213: -3203977891438382874
+    second: VFX_Bubbles_strip19_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658c006ffe6ba07b0800000000000000
+      internalID: -5257188473260947370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a1afe24b1219760800000000000000
+      internalID: 7462783115295595069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c224266c39c8580800000000000000
+      internalID: -8823515089664332673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0bc412f47555c70800000000000000
+      internalID: 8959163031096176883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae0f9858fdb43280800000000000000
+      internalID: -9064411275653607768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 7
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee260460f4a37f30800000000000000
+      internalID: 4572179399088418532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2154e72f9ea6520800000000000000
+      internalID: 2696224554644476585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7be0e98fa2fa35c0800000000000000
+      internalID: -4234805663842112643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea28b01ffa73f680800000000000000
+      internalID: -8722492817370764563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 5
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38883dab048331050800000000000000
+      internalID: 5770017398255224963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c757f0b3e2d3437f0800000000000000
+      internalID: -633814378783738500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9619e73000440f200800000000000000
+      internalID: 211743949335728489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 8
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb6faa0670fd23b0800000000000000
+      internalID: -5535503977192395808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6877a29fd8aa3c30800000000000000
+      internalID: 4339966869116516463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_14
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 10
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4b5e02353afe570800000000000000
+      internalID: 8498190599300953331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d068df30b74f40d0800000000000000
+      internalID: -3436449168349437741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08461f0e8b463f8b0800000000000000
+      internalID: -5119637606179445632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d045930269e28a790800000000000000
+      internalID: -7518708355574442995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd14573a4d17496b0800000000000000
+      internalID: -5290478504164113953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_19
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43148aca5a3e57e80800000000000000
+      internalID: -8181382847342821068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_20
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2b868575c515320800000000000000
+      internalID: 2544916794656207607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Bubbles_strip19_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e03c98451f2983d0800000000000000
+      internalID: -3203977891438382874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX_Bubbles_strip19_0: -5257188473260947370
+      VFX_Bubbles_strip19_1: 7462783115295595069
+      VFX_Bubbles_strip19_10: -633814378783738500
+      VFX_Bubbles_strip19_11: 211743949335728489
+      VFX_Bubbles_strip19_12: -5535503977192395808
+      VFX_Bubbles_strip19_13: 4339966869116516463
+      VFX_Bubbles_strip19_14: 8498190599300953331
+      VFX_Bubbles_strip19_15: -3436449168349437741
+      VFX_Bubbles_strip19_16: -5119637606179445632
+      VFX_Bubbles_strip19_17: -7518708355574442995
+      VFX_Bubbles_strip19_18: -5290478504164113953
+      VFX_Bubbles_strip19_19: -8181382847342821068
+      VFX_Bubbles_strip19_2: -8823515089664332673
+      VFX_Bubbles_strip19_20: 2544916794656207607
+      VFX_Bubbles_strip19_21: -3203977891438382874
+      VFX_Bubbles_strip19_3: 8959163031096176883
+      VFX_Bubbles_strip19_4: -9064411275653607768
+      VFX_Bubbles_strip19_5: 4572179399088418532
+      VFX_Bubbles_strip19_6: 2696224554644476585
+      VFX_Bubbles_strip19_7: -4234805663842112643
+      VFX_Bubbles_strip19_8: -8722492817370764563
+      VFX_Bubbles_strip19_9: 5770017398255224963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
