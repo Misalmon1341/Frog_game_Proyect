@@ -137,10 +137,10 @@ TextureImporter:
       name: GameTittle_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 31
+        x: 40
+        y: 329
         width: 726
-        height: 779
+        height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
