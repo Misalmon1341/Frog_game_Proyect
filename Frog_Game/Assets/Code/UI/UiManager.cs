@@ -90,6 +90,21 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public UIWindow GetWindow(string windowId)
+    {
+        foreach (UIWindow window in windows)
+        {
+            if (window.WindowId == windowId)
+            {
+                Debug.Log("Found Window");
+                return window;
+            }
+        }
+        Debug.LogError($"No se encontro la ventana con ID");
+        return null;
+        
+    }
+
  
     void Update()
     {

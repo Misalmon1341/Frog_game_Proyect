@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7eeeefe650d3a6d4cb12fa624660e1e7
+guid: a0dd41f402a982e4f805fba0f41a8f8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5745300890617815378
-    second: SquareButton_Green_0
+      213: -4942673387371922453
+    second: SquareButton_Silver_Pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquareButton_Green_0
+      name: SquareButton_Silver_Pressed_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,15 +121,15 @@ TextureImporter:
         width: 15
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 5, z: 4, w: 5}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eae5df6a7479440b0800000000000000
-      internalID: -5745300890617815378
+      spriteID: beb7be8ddb8186bb0800000000000000
+      internalID: -4942673387371922453
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9431734eea018de42b60d26912d0512f
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SquareButton_Green_0: -5745300890617815378
+      SquareButton_Silver_Pressed_0: -4942673387371922453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

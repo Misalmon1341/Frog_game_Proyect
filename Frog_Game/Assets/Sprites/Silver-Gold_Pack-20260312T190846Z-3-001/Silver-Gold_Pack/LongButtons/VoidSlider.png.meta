@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7eeeefe650d3a6d4cb12fa624660e1e7
+guid: 34af45f7954a68e40918a52ee8ab42e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5745300890617815378
-    second: SquareButton_Green_0
+      213: -4210548722236080875
+    second: LongButton_White_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquareButton_Green_0
+      name: LongButton_White_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 15
-        height: 17
+        x: 1
+        y: 1
+        width: 53
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eae5df6a7479440b0800000000000000
-      internalID: -5745300890617815378
+      spriteID: 51db4adde302195c0800000000000000
+      internalID: -4210548722236080875
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ab2c799226c366847ac4fc713d8e3b50
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SquareButton_Green_0: -5745300890617815378
+      LongButton_White_0: -4210548722236080875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

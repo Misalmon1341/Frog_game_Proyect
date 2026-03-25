@@ -527,6 +527,9 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
+  _tittleText: {fileID: 464810569836462051}
+  _buttonNo: {fileID: 3697290809829727826}
+  _buttonYes: {fileID: 2118695472822246608}
   rectTransformPopUi: {fileID: 5986185113471140070}
   initialHeight: 500
 --- !u!1 &5221789483304097467
