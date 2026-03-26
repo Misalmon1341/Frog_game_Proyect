@@ -12,12 +12,15 @@ public class PopupUI : UIWindow
     [SerializeField] private Button _buttonNo;
     [SerializeField] private Button _buttonYes;
     
+    public Button ButtonNo => _buttonNo;
+    public Button ButtonYes => _buttonYes;
     #region UiWindow
     [SerializeField]private RectTransform rectTransformPopUi;
     [SerializeField] private float initialHeight;
     private float _initialy;
     private float _finaly;
 
+    
     public UnityEvent OnClicYes = new UnityEvent();
     public UnityEvent OnClicNo = new UnityEvent();
     public override void Initialize()

@@ -532,6 +532,12 @@ MonoBehaviour:
   _buttonYes: {fileID: 2118695472822246608}
   rectTransformPopUi: {fileID: 5986185113471140070}
   initialHeight: 500
+  OnClicYes:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClicNo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,15 +738,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.22393842, b: 0.14684942, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a315b79e7e441e42b90336a0e082912, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 5936735950659172563, guid: 66d07a3cdbb94dc41ac160f31cabe22a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -853,15 +859,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.30129182, g: 0.8396226, b: 0.29703632, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a315b79e7e441e42b90336a0e082912, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -983088800934297763, guid: d937bba777c9e254991016d6b62a1fad, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
