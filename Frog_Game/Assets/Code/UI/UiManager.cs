@@ -116,5 +116,13 @@ public static class WindowsIds
 {
     public const string PopUI = "popupui";
     public const string SettingsUI = "settingsui";
-    public const string InventoryUI =  "inventoryui";
+    public const string StoreUI =  "storeui";
+    public const string MainMenuUI =  "mainmenuui";
+    public const string PurchaseUI =  "purchaseui";
+    public const string CreditsUI =  "creditsui";
+    public const string GameOverUI =  "gameoverui";
+    public const string TutorialUI =  "tutorialui";
+    public const string PauseUI =  "pauseui";
+    public const string GameplayUI =  "gameplayui";
+    
 }

@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "name": "PlayeriInputSystem",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "6b2bab09-e1ba-4396-b4ee-8cea6743403b",
+            "actions": [
+                {
+                    "name": "New action1",
+                    "type": "PassThrough",
+                    "id": "98297627-dc57-487b-b4fd-7c45f8054017",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}
