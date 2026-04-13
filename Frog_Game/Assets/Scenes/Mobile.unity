@@ -696,6 +696,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4720587286018121863, guid: ce56be2a670fdd048b03d5422844f6d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 112.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720587286018121863, guid: ce56be2a670fdd048b03d5422844f6d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -96
+      objectReference: {fileID: 0}
     - target: {fileID: 4822191532289664782, guid: ce56be2a670fdd048b03d5422844f6d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.328552
@@ -2049,6 +2057,10 @@ PrefabInstance:
       value: StoreUI
       objectReference: {fileID: 0}
     - target: {fileID: 4250057223721881706, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361449680409806343, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
