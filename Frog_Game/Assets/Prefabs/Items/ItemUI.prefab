@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 8344030916178719763}
   - component: {fileID: 5559357747903796508}
   m_Layer: 0
-  m_Name: Item (11)
+  m_Name: ItemUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,3 +423,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c00e8b1bd17de419e82fdcda301b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemUI
+  icon: {fileID: 7725852388543257124}
+  itemName: {fileID: 2060211029334344433}
