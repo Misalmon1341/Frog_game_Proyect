@@ -191,9 +191,9 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 50
+    m_Bottom: 40
   m_ChildAlignment: 7
-  m_Spacing: 0
+  m_Spacing: -50
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 1532850384916228346}
   - component: {fileID: 8359853660397694474}
   - component: {fileID: 207664815392891053}
+  - component: {fileID: 1168250839734549772}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -609,10 +610,10 @@ RectTransform:
   - {fileID: 4263467929948232783}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.34140953, y: 0.39496976}
+  m_AnchorMax: {x: 0.6585905, y: 0.60503024}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 423.72, y: 226.79999}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1532850384916228346
 CanvasRenderer:
@@ -678,6 +679,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1168250839734549772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452692378168370012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9d7552431a5f14cb77324c2f5eb4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 5986185113471140070}
+  mobileAnchorMin: {x: 0.40946153, y: 0.395}
+  mobileAnchorMax: {x: 0.59053844, y: 0.605}
+  tabletAnchorMin: {x: 0.34140953, y: 0.39496976}
+  tabletAnchorMax: {x: 0.6585905, y: 0.60503024}
 --- !u!1 &7302208424490050351
 GameObject:
   m_ObjectHideFlags: 0
