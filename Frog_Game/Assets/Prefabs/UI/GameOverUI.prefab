@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 5068902844253975639}
   - component: {fileID: 5028203479035356980}
   - component: {fileID: 8536563605619474123}
+  - component: {fileID: 3902528062183147271}
   m_Layer: 0
   m_Name: BackGroundImg
   m_TagString: Untagged
@@ -349,6 +350,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3902528062183147271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874305416801604130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9d7552431a5f14cb77324c2f5eb4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 5068902844253975639}
+  mobileAnchorMin: {x: 0, y: 0}
+  mobileAnchorMax: {x: 1, y: 1}
+  tabletAnchorMin: {x: 0, y: 0}
+  tabletAnchorMax: {x: 1, y: 1}
 --- !u!1 &1095987410333736392
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +512,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903184181555007204}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -502,7 +520,7 @@ RectTransform:
   - {fileID: 8674893243268064574}
   - {fileID: 5642782656124632451}
   - {fileID: 7970369533037271135}
-  m_Father: {fileID: 5359585169914894593}
+  m_Father: {fileID: 7680940862171099985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -683,6 +701,7 @@ GameObject:
   - component: {fileID: 7680940862171099985}
   - component: {fileID: 10464445758503430}
   - component: {fileID: 1116612929873763342}
+  - component: {fileID: 8670824541082370645}
   m_Layer: 0
   m_Name: PanelImg
   m_TagString: Untagged
@@ -701,13 +720,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4110963378720358607}
+  - {fileID: 5071067211795011005}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.26920536, y: 0.18013535}
+  m_AnchorMax: {x: 0.7307946, y: 0.81986463}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 920, y: 690}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10464445758503430
 CanvasRenderer:
@@ -747,6 +768,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8670824541082370645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430671253556472491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9d7552431a5f14cb77324c2f5eb4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 7680940862171099985}
+  mobileAnchorMin: {x: 0.29944643, y: 0.18023236}
+  mobileAnchorMax: {x: 0.70055354, y: 0.81976765}
+  tabletAnchorMin: {x: 0.26920536, y: 0.18013535}
+  tabletAnchorMax: {x: 0.7307946, y: 0.81986463}
 --- !u!1 &3658913510796336274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,8 +1295,6 @@ RectTransform:
   - {fileID: 5017454895442115496}
   - {fileID: 4174240411633312405}
   - {fileID: 7680940862171099985}
-  - {fileID: 4110963378720358607}
-  - {fileID: 5071067211795011005}
   m_Father: {fileID: 6389764000126857304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1548,7 +1584,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7092891509438853988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1556,7 +1592,7 @@ RectTransform:
   - {fileID: 3067939934963289979}
   - {fileID: 4992073125553690746}
   - {fileID: 2974485641252442216}
-  m_Father: {fileID: 5359585169914894593}
+  m_Father: {fileID: 7680940862171099985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

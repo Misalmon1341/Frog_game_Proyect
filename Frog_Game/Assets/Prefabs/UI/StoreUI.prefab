@@ -520,10 +520,10 @@ RectTransform:
   - {fileID: 2482353761211261401}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 306, y: -100}
-  m_SizeDelta: {x: 305, y: 80}
+  m_AnchorMin: {x: 0.06554199, y: 0.88553673}
+  m_AnchorMax: {x: 0.195772, y: 0.94439673}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0.0000019073486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7862590847006673025
 CanvasRenderer:
@@ -882,7 +882,7 @@ RectTransform:
   m_Father: {fileID: 3372118977819203556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1155,10 +1155,10 @@ RectTransform:
   - {fileID: 1205005342867761373}
   m_Father: {fileID: 4556574042777731183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1022, y: -15}
-  m_SizeDelta: {x: 1025, y: 125}
+  m_AnchorMin: {x: 0.49989074, y: 0.87456113}
+  m_AnchorMax: {x: 1.0014681, y: 1.0768819}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &8925569950638504245
 CanvasRenderer:
@@ -3044,7 +3044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 9}
+  m_AnchoredPosition: {x: 11, y: 3.7634096}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1259031545194624009
@@ -3813,10 +3813,10 @@ RectTransform:
   - {fileID: 4850420705468953847}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 400, y: 120}
+  m_AnchorMin: {x: 0.41460326, y: 0.8748926}
+  m_AnchorMax: {x: 0.5853967, y: 0.96293116}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 0, y: -0.00004386902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2736615739842116709
 CanvasRenderer:
@@ -4211,7 +4211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2274852819682942369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4785,6 +4785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5359585169914894593}
+  - component: {fileID: 8272883967964671379}
   m_Layer: 0
   m_Name: Container
   m_TagString: Untagged
@@ -4815,6 +4816,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8272883967964671379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221789483304097467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9d7552431a5f14cb77324c2f5eb4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponsiveElement
+  rectTransform: {fileID: 5359585169914894593}
+  mobileAnchorMin: {x: 0, y: 0}
+  mobileAnchorMax: {x: 1, y: 1}
+  tabletAnchorMin: {x: 0, y: 0}
+  tabletAnchorMax: {x: 1, y: 1}
 --- !u!1 &5226183786185559247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5396,10 +5414,10 @@ RectTransform:
   - {fileID: 6708004840273420102}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.06378454, y: 0.25048333}
+  m_AnchorMax: {x: 0.93621546, y: 0.78632224}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2043.242, y: 617.925}
+  m_SizeDelta: {x: 0, y: 0.0000076293945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5673088403454508725
 GameObject:
@@ -7772,10 +7790,10 @@ RectTransform:
   - {fileID: 9147734269715406767}
   m_Father: {fileID: 4556574042777731183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -3.3791504, y: -15}
-  m_SizeDelta: {x: 1025, y: 125}
+  m_AnchorMin: {x: -0.0016535659, y: 0.87456113}
+  m_AnchorMax: {x: 0.4999237, y: 1.0768819}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &2580043728822184009
 CanvasRenderer:
@@ -8802,7 +8820,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030755065, y: 0}
-  m_SizeDelta: {x: 0, y: -0.69781494}
+  m_SizeDelta: {x: 0, y: -0.698}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2556127491130018483
 MonoBehaviour:
@@ -9449,7 +9467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.97700006, y: 0.98742414}
-  m_AnchoredPosition: {x: 32.7968, y: 3.5}
+  m_AnchoredPosition: {x: 32.796875, y: 3.5}
   m_SizeDelta: {x: -59.6903, y: 7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4463168429201117128
@@ -9675,10 +9693,10 @@ RectTransform:
   - {fileID: 7260488125803623640}
   m_Father: {fileID: 5359585169914894593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -267, y: -100}
-  m_SizeDelta: {x: 250, y: 70}
+  m_AnchorMin: {x: 0.8326224, y: 0.8855366}
+  m_AnchorMax: {x: 0.9393683, y: 0.93976307}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -0.000011444092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5489186557860144183
 CanvasRenderer:
