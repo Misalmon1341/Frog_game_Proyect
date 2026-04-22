@@ -993,6 +993,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093006112022286684, guid: b6afb1a2bfb682a42a6e0c72644fb9b7, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1118,6 +1122,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 720.34515, y: 419.9612, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1242098198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242098200}
+  - component: {fileID: 1242098199}
+  m_Layer: 0
+  m_Name: SettingsManmager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1242098199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242098198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84dec77701694ae45acaec20cd856261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
+  musicValue: 1
+  sfxValue: 1
+--- !u!4 &1242098200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242098198}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1196.8943, y: 600.87524, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2570,7 +2620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022385248017963189, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00029364415
+      value: 0.000012484579
       objectReference: {fileID: 0}
     - target: {fileID: 7022385248017963189, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2778,7 +2828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8838641355715848699, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.3125
+      value: -29.31247
       objectReference: {fileID: 0}
     - target: {fileID: 8920600243308934357, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2822,7 +2872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9093006112022286684, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_fontSize
-      value: 66.4
+      value: 66.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3195,3 +3245,4 @@ SceneRoots:
   - {fileID: 1286226658}
   - {fileID: 1971744987}
   - {fileID: 1902546497}
+  - {fileID: 1242098200}
