@@ -11,12 +11,12 @@ public class SettingsUI : UIWindow
     {
         base.Initialize();
         musicSlide.onValueChanged.AddListener(OnMusicValueChange);
+        musicSlide.value = SettingsManager.Instance.MusicValue;
     }
 
     public void OnMusicValueChange(float value)
     {
-        SettingsManager.Instance.SetMusicValue(value);
-        
+        SettingsManager.Instance.SetMusicValue(value);   
     }
     
 
