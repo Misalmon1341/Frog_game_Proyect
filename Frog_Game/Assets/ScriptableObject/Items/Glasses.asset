@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa2adaad0f3ab04885602f982c58db1, type: 3}
-  m_Name: ItemData1
+  m_Name: Glasses
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  icon: {fileID: -8111153867600346049, guid: 6f34a74f198a8df44985bb237628cf0f, type: 3}
-  itemName: Gorra
-  itemType: 0
+  icon: {fileID: 7746886584640597337, guid: b4d6684f5dc9a194d88bbe8a51abf335, type: 3}
+  itemName: Glasses
+  itemType: 1

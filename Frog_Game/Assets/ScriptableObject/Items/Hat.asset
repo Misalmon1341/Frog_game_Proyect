@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa2adaad0f3ab04885602f982c58db1, type: 3}
-  m_Name: ItemData1
+  m_Name: Hat
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  icon: {fileID: -8111153867600346049, guid: 6f34a74f198a8df44985bb237628cf0f, type: 3}
-  itemName: Gorra
+  icon: {fileID: -8017679626771150016, guid: 29549c8ac13245748a49462255604478, type: 3}
+  itemName: Sombrerito
   itemType: 0
