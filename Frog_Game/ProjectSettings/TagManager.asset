@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -43,6 +44,9 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 3888215075
+    locked: 0
+  - name: GamePlay
+    uniqueID: 2424223935
     locked: 0
   m_RenderingLayers:
   - Default

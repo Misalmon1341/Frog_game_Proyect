@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class BgController : MonoBehaviour
 {
+   /*
    public void Start()
    {
       SetScale();
@@ -14,6 +15,5 @@ public class BgController : MonoBehaviour
       float screenWidth = Camera.main.pixelWidth;
           // Escalar objeto basado en la resolución
       transform.localScale = new Vector3(screenWidth , 1f, 1f); 
-      
-   }
+   } */
 }
