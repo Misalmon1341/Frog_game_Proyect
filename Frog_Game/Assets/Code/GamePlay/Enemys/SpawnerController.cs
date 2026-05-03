@@ -20,6 +20,7 @@ public class SpawnerController : MonoBehaviour
              Instantiate(enemyObject[0], spawnPoints[randomPoint].position, Quaternion.identity);
              return;
             }
+
             Instantiate(enemyObject[randomEnemy], spawnPoints[randomPoint].position, Quaternion.identity);
         }
     }
