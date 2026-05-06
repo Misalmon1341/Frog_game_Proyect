@@ -1,10 +1,18 @@
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
-    [Button]
+    public GameObject gamePlayElements;
+    private void Start()
+    {
+        UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
+        gamePlayElements.SetActive(false);
+    }
+
+    #region PopUp Functions
+      [Button]
     public void ChangeText()
     {   
         PopupUI popupUI = UiManager.Instance.GetWindow(WindowsIds.PopUI) as PopupUI;
@@ -49,4 +57,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Button No");
     }
+     
+
+    #endregion
+   
 }

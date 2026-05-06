@@ -486,6 +486,8 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
+  playButton: {fileID: 0}
+  Button: {fileID: 0}
 --- !u!1 &4921800405966587878
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +971,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STORE
+  m_text: 'CREDITS
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69a3a639bcdf2054dbb349d75008fbf5, type: 2}
   m_sharedMaterial: {fileID: 8427848046761454170, guid: 69a3a639bcdf2054dbb349d75008fbf5, type: 2}

@@ -20,6 +20,7 @@ public class StoreUI : UIWindow
 
     public override void Initialize()
     {
+        base.Initialize();
         SpawnItem();
     }
       public override void Show()
