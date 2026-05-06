@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -6,9 +7,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public float jumpforce;
     private bool isGrounded;
+    private Animator playerAnimator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -16,8 +20,12 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            playerAnimator.SetBool("Jump", false);
         }
-    }private void OnCollisionExit2D(Collision2D other)
+       
+    }
+    
+    private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {
@@ -25,12 +33,64 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (other.gameObject.CompareTag("Enemy"))
         {
-              rb.AddForce(Vector2.up * jumpforce);
-              Debug.Log("Saltando");
+            Debug.Log("Golpeo al juagdor");
+            playerAnimator.SetBool("Run", false);
+            playerAnimator.SetBool("Hurt", true);
         }
     }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Salio del juagdor");
+            playerAnimator.SetBool("Hurt", false);
+        }
+        
+        
+    }
+
+    void Update()
+    {
+        Jump();
+        Crouch();
+        
+    }
+
+    public void Jump()
+    {
+        if (isGrounded)
+        {
+            playerAnimator.SetBool("Run", true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            playerAnimator.SetBool("Run", false);
+            playerAnimator.SetBool("Jump", true);
+            rb.AddForce(Vector2.up * jumpforce);
+            Debug.Log("Saltando");
+        }
+    }
+    public void Crouch()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+        {
+            playerAnimator.SetBool("Run", false);
+            playerAnimator.SetBool("Crouch", true);
+            Debug.Log("Agachado");
+        }
+        
+        if (Input.GetKeyUp(KeyCode.LeftShift) && isGrounded)
+        {
+            playerAnimator.SetBool("Crouch", false);
+        }
+        
+    }
+
+   
+    
 }

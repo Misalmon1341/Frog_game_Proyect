@@ -1488,7 +1488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096dc7026acc1df4a951e292c887ad7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
-  _itemsList: []
+  _itemsList:
+  - Icon: {fileID: -8017679626771150016, guid: 29549c8ac13245748a49462255604478, type: 3}
+    ItemName: Sombrerito
+    ItemType: 0
+  - Icon: {fileID: -8017679626771150016, guid: 29549c8ac13245748a49462255604478, type: 3}
+    ItemName: Sombrerito
+    ItemType: 0
   itemDataList:
   - {fileID: 11400000, guid: ea1791798b3c65a4fba83ed6602be94a, type: 2}
   - {fileID: 11400000, guid: f2a18be8d1abad040a780601d794e1ec, type: 2}
