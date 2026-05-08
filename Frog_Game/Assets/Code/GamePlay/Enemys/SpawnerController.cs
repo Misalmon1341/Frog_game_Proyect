@@ -14,12 +14,12 @@ public class SpawnerController : MonoBehaviour
         {
             timer = 0;
             int randomPoint = Random.Range( 0, spawnPoints.Length );
-            int randomEnemy = Random.Range( 0,enemyObject.Length );
-            if(randomPoint == 0)
+            int randomEnemy = Random.Range( 0,enemyObject.Length  );
+            /*if(randomPoint == 0)
             {
              Instantiate(enemyObject[0], spawnPoints[randomPoint].position, Quaternion.identity);
              return;
-            }
+            }*/
 
             Instantiate(enemyObject[randomEnemy], spawnPoints[randomPoint].position, Quaternion.identity);
         }

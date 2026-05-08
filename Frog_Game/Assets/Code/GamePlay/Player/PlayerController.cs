@@ -8,11 +8,15 @@ public class PlayerController : MonoBehaviour
     public float jumpforce;
     private bool isGrounded;
     private Animator playerAnimator;
+    public int maxHealth;
+    private int currentHealth;
+    private GamePlayUi gamePlayUi;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+        gamePlayUi = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -40,6 +44,19 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Golpeo al juagdor");
             playerAnimator.SetBool("Run", false);
             playerAnimator.SetBool("Hurt", true);
+            GameManager.Instance.LostHearts();
+        }
+        if (other.gameObject.CompareTag("Heart"))
+        {
+            bool heartRetrieve = GameManager.Instance.WinHearts();
+            if (heartRetrieve)
+            {
+             Destroy(other.gameObject);
+            }
+        }
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
         }
     }
 

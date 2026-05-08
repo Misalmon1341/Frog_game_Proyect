@@ -406,7 +406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Back
+  m_text: 'Exit
 
 '
   m_isRightToLeft: 0
@@ -1381,6 +1381,8 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
+  resumeButton: {fileID: 544546998885124115}
+  exitButton: {fileID: 214757719954142714}
 --- !u!1 &4415521709066256391
 GameObject:
   m_ObjectHideFlags: 0

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 9134473804632935334}
   - component: {fileID: 4027129447335294598}
   - component: {fileID: 1380622181920477623}
+  - component: {fileID: 9142155048926684366}
   m_Layer: 0
   m_Name: MidgeIcon
   m_TagString: Untagged
@@ -196,6 +197,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9142155048926684366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179424036317698980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.6039216}
+  m_EffectDistance: {x: -8.1, y: -2.48}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2402660165174875202
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +223,7 @@ GameObject:
   - component: {fileID: 1929899635813046894}
   - component: {fileID: 8842327699046597089}
   - component: {fileID: 5214958527037373417}
+  - component: {fileID: 6428759707166862466}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -271,6 +288,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6428759707166862466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402660165174875202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  m_EffectDistance: {x: -9.27, y: -4.79}
+  m_UseGraphicAlpha: 1
 --- !u!1 &3825647263248024440
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +314,7 @@ GameObject:
   - component: {fileID: 2445114000834690145}
   - component: {fileID: 1289061197728032979}
   - component: {fileID: 3979213916998669707}
+  - component: {fileID: 103822774344542583}
   m_Layer: 0
   m_Name: Heart (1)
   m_TagString: Untagged
@@ -346,6 +379,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &103822774344542583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3825647263248024440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  m_EffectDistance: {x: -9.27, y: -4.79}
+  m_UseGraphicAlpha: 1
 --- !u!1 &4250057223721881706
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +447,10 @@ MonoBehaviour:
   easeIn: 26
   easeOut: 27
   pauseButton: {fileID: 2259642340842033216}
+  hearts:
+  - {fileID: 4640728339373398141}
+  - {fileID: 3825647263248024440}
+  - {fileID: 2402660165174875202}
 --- !u!1 &4640728339373398141
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +462,7 @@ GameObject:
   - component: {fileID: 7513893616648612125}
   - component: {fileID: 7321444361448333669}
   - component: {fileID: 8881694508726596333}
+  - component: {fileID: 424234695425139063}
   m_Layer: 0
   m_Name: Heart (2)
   m_TagString: Untagged
@@ -474,6 +527,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &424234695425139063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640728339373398141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  m_EffectDistance: {x: -9.27, y: -4.79}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5221789483304097467
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181, y: -280}
+  m_AnchoredPosition: {x: 184.1, y: -280}
   m_SizeDelta: {x: 226.38, y: 70.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2481181754792574343

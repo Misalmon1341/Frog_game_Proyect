@@ -48,13 +48,13 @@ public class UIWindow : MonoBehaviour
     {
         //canvas.gameObject.SetActive(true);
         canvas.gameObject.SetActive(true);
-        rectTransformCanvasGroup.DOScale(Vector3.one, duration).SetEase(easeIn);
+        rectTransformCanvasGroup.DOScale(Vector3.one, duration).SetUpdate(true).SetEase(easeIn);
     }
     
     [Button]
     public virtual void Hide()
     {
-        rectTransformCanvasGroup.DOScale(Vector3.zero, duration).SetEase(easeOut).OnComplete (() =>
+        rectTransformCanvasGroup.DOScale(Vector3.zero, duration).SetUpdate(true).SetEase(easeOut).OnComplete (() =>
         {
             canvas.gameObject.SetActive(false);
         });

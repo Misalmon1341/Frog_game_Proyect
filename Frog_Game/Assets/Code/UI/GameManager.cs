@@ -2,11 +2,13 @@ using System;
 using DG.Tweening;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject gamePlayElements;
     public static GameManager Instance;
+    private int totalHearts = 3;
 
     private void Awake()
     {
@@ -60,7 +62,7 @@ public class GameManager : MonoBehaviour
    
 
     #endregion
-    #region gameplay Fuctions
+    #region Gameplay Fuctions
 
     public void OnPauseButtonClick()
     {
@@ -69,8 +71,54 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
         UiManager.Instance.ShowWindow(WindowsIds.PauseUI);
     }
+
+    public void LostHearts()
+    {   
+        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
+        totalHearts -= 1;
+        if (totalHearts == 0)
+        {
+            Time.timeScale = 0;
+            UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
+            UiManager.Instance.ShowWindow(WindowsIds.GameOverUI);
+            
+        }
+        gameplayUI.DissabledHeart(totalHearts);
+    }
+
+    public bool WinHearts()
+    {
+        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
+        if (totalHearts == 3)
+        {
+            return false;
+        }
+        gameplayUI.ActiveHeart(totalHearts);
+        totalHearts += 1;
+        return true;
+    }
     
     #endregion
+
+    #region Pause Functions
+
+    public void OnResumeButtonClick()
+    {
+        PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
+        UiManager.Instance.CloseWindow(WindowsIds.PauseUI);
+        UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
+        Time.timeScale = 1;
+    }
+
+    public void OnExitButtonClick()
+    {
+        PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
+    #endregion
+    
     #region Store Fuctions
     public void OnBackStoreButtonClick()
     { 
