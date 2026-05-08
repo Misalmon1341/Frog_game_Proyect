@@ -1918,6 +1918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   jumpforce: 450
   maxHealth: 0
+  coinValue: 3
 --- !u!50 &603287173
 Rigidbody2D:
   serializedVersion: 5

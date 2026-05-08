@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject gamePlayElements;
     public static GameManager Instance;
     private int totalHearts = 3;
+    private int totalCoins = 0;
 
     private void Awake()
     {
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     {
         UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
         gamePlayElements.SetActive(false);
+        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
+        gameplayUI.CoinValue.text = totalCoins.ToString();
     }
 
     
@@ -81,6 +84,8 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
             UiManager.Instance.ShowWindow(WindowsIds.GameOverUI);
+            GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
+            gameOverUI.CoinFinalValue.text = totalCoins.ToString();
             
         }
         gameplayUI.DissabledHeart(totalHearts);
@@ -96,6 +101,13 @@ public class GameManager : MonoBehaviour
         gameplayUI.ActiveHeart(totalHearts);
         totalHearts += 1;
         return true;
+    }
+
+    public void AddCoins(int coins)
+    {
+        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
+        totalCoins += coins;
+        gameplayUI.CoinValue.text = totalCoins.ToString();
     }
     
     #endregion
@@ -129,7 +141,11 @@ public class GameManager : MonoBehaviour
     }
     public void OnRetryButtonClick()
     {
-        
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI;
+        mainMenuUI.HideOnStart = true;
+        //UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
     }
 
     #endregion

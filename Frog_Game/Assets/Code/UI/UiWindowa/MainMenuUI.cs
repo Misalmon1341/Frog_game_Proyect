@@ -14,7 +14,7 @@ public class MainMenuUI : UIWindow
     public Button CreditsButton => creditsButton;
     public override void Initialize()
     {
-       
+       base.Initialize();
     }
 
     

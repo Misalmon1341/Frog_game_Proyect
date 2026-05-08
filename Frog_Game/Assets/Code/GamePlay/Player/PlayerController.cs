@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Animator playerAnimator;
     public int maxHealth;
+    public int coinValue;
     private int currentHealth;
     private GamePlayUi gamePlayUi;
 
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Coin"))
         {
+            GameManager.Instance.AddCoins(coinValue);
             Destroy(other.gameObject);
         }
     }

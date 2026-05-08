@@ -21,6 +21,11 @@ public class UIWindow : MonoBehaviour
     
     public RectTransform rectTransformCanvas => canvas.GetComponent<RectTransform>();
     
+    public bool HideOnStart
+    {
+        get => hideOnStart;
+        set => hideOnStart = value;
+    }
     public Ease EaseIn => easeIn;
     public Ease EaseOut => easeOut;
 
