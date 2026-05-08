@@ -486,8 +486,10 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
-  playButton: {fileID: 0}
-  Button: {fileID: 0}
+  playButton: {fileID: 8452940740707896472}
+  storeButton: {fileID: 8059731254552501213}
+  settingsButton: {fileID: 824195560609036233}
+  creditsButton: {fileID: 3854019259156931045}
 --- !u!1 &4921800405966587878
 GameObject:
   m_ObjectHideFlags: 0

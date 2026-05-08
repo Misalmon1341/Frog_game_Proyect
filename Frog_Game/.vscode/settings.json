@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Frog_Game.slnx"
+    "dotnet.defaultSolution": "Frog_Game.slnx",
+    "dotnet.preferCSharpExtension": true
 }

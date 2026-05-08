@@ -1101,6 +1101,7 @@ MonoBehaviour:
   easeOut: 27
   musicSlide: {fileID: 8697670192652560089}
   sfxSlide: {fileID: 3642429857859014945}
+  backSettingsButton: {fileID: 5526542716798137926}
 --- !u!1 &5134752158820946653
 GameObject:
   m_ObjectHideFlags: 0

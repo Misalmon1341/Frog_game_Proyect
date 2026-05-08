@@ -398,6 +398,7 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
+  pauseButton: {fileID: 2259642340842033216}
 --- !u!1 &4640728339373398141
 GameObject:
   m_ObjectHideFlags: 0

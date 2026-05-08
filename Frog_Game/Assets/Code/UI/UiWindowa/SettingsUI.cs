@@ -6,6 +6,7 @@ public class SettingsUI : UIWindow
     [Header("SettingsUI")]
     [SerializeField] private Slider musicSlide;
     [SerializeField] private Slider sfxSlide;
+    [SerializeField] private Button backSettingsButton;
 
     public override void Initialize()
     {
@@ -22,11 +23,13 @@ public class SettingsUI : UIWindow
 
     public override void Show()
     {
+        backSettingsButton.onClick.AddListener(() => {GameManager.Instance.OnBackSettindsButtonClick();});
         base.Show();
     }
 
     public override void Hide()
     {
+        backSettingsButton.onClick.RemoveAllListeners();
         base.Hide();
     }
 }

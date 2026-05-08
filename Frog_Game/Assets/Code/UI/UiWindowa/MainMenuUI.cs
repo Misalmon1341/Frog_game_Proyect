@@ -14,22 +14,25 @@ public class MainMenuUI : UIWindow
     public Button CreditsButton => creditsButton;
     public override void Initialize()
     {
-        playButton.onClick.AddListener(OnPlayButtonClick);
-        
+       
     }
 
-    public void OnPlayButtonClick()
-    {
-        
-    }
-
+    
     public override void Show()
     {
+        playButton.onClick.AddListener(() => {GameManager.Instance.OnPlayButtonClick();});
+        storeButton.onClick.AddListener(() => {GameManager.Instance.OnStoreButtonClick();});
+        settingsButton.onClick.AddListener(() => {GameManager.Instance.OnSettingsClick();});
+        creditsButton.onClick.AddListener(() => {GameManager.Instance.OnCreditsClick();});
         base.Show();
     }
 
     public override void Hide()
     {
+        playButton.onClick.RemoveAllListeners();
+        storeButton.onClick.RemoveAllListeners();
+        settingsButton.onClick.RemoveAllListeners();
+        creditsButton.onClick.RemoveAllListeners();
         base.Hide();
     }
 }
