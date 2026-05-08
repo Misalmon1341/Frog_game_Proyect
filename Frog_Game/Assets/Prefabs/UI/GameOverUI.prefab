@@ -1050,6 +1050,8 @@ MonoBehaviour:
   duration: 1
   easeIn: 26
   easeOut: 27
+  retryButton: {fileID: 5526542716798137926}
+  exitButton: {fileID: 1686252462795182347}
 --- !u!1 &5079667902902582882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,9 +1980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Back
-
-'
+  m_text: Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69a3a639bcdf2054dbb349d75008fbf5, type: 2}
   m_sharedMaterial: {fileID: 8427848046761454170, guid: 69a3a639bcdf2054dbb349d75008fbf5, type: 2}

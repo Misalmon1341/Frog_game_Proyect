@@ -118,7 +118,21 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
-    
+
+    #region GameOver Functions
+
+    public void OnExitGameOverButtonClickk()
+    {
+        GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+    public void OnRetryButtonClick()
+    {
+        
+    }
+
+    #endregion
     #region Store Fuctions
     public void OnBackStoreButtonClick()
     { 
