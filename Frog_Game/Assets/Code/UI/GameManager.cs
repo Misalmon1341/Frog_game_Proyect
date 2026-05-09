@@ -37,6 +37,21 @@ public class GameManager : MonoBehaviour
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
         UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
+
+        StartRun();
+        
+    }
+
+    private void StartRun()
+    {
+        // Reset player pos => Player manager
+        // Reset coins => Currency manager
+        // Reset lifes => PlayerManager
+        // Reset enemies => Enemies Manager
+        // Move background => Background
+
+
+
         gamePlayElements.SetActive(true);
     }
 

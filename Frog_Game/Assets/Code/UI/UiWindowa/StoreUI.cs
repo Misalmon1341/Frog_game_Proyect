@@ -33,8 +33,8 @@ public class StoreUI : UIWindow
 
     public override void Initialize()
     {
-        cosmeticScrollGroup.gameObject.SetActive(false);
-        inventoryScrollGroup.gameObject.SetActive(true);
+        cosmeticScrollGroup.gameObject.SetActive(true);
+        inventoryScrollGroup.gameObject.SetActive(false);
         base.Initialize();
         SpawnItem();
     }
