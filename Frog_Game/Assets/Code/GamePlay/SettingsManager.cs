@@ -51,5 +51,6 @@ public class SettingsManager : MonoBehaviour
     {
         public static string musicValue = "musicvalue";
         public static string sfxValue = "sfxValue";
+        public static string gameOver = "GameOver";
     }
 }

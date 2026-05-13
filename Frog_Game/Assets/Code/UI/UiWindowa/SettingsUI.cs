@@ -13,8 +13,14 @@ public class SettingsUI : UIWindow
         base.Initialize();
         musicSlide.onValueChanged.AddListener(OnMusicValueChange);
         musicSlide.value = SettingsManager.Instance.MusicValue;
+        sfxSlide.onValueChanged.AddListener(OnSfxValueChange);
+        sfxSlide.value = SettingsManager.Instance.SfxValue;
     }
 
+    public void OnSfxValueChange(float value)
+    {
+        SettingsManager.Instance.SetSfxValue(value);
+    }
     public void OnMusicValueChange(float value)
     {
         SettingsManager.Instance.SetMusicValue(value);   

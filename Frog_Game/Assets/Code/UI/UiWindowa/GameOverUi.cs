@@ -7,7 +7,9 @@ public class GameOverUi : UIWindow
       [SerializeField] private Button retryButton;
       [SerializeField] private Button exitButton;
       [SerializeField] private TextMeshProUGUI coinFinalValue;
+      
       public TextMeshProUGUI CoinFinalValue => coinFinalValue;
+      
       public override void Initialize()
       {
           base.Initialize();
@@ -18,6 +20,8 @@ public class GameOverUi : UIWindow
            retryButton.onClick.AddListener(() => {GameManager.Instance.OnRetryButtonClick();});
            exitButton.onClick.AddListener(() => {GameManager.Instance.OnExitGameOverButtonClickk();});
        }
+
+    
    
        public override void Hide()
        {
@@ -25,4 +29,5 @@ public class GameOverUi : UIWindow
            exitButton.onClick.RemoveAllListeners();
            retryButton.onClick.RemoveAllListeners();
        }
+       
 }
