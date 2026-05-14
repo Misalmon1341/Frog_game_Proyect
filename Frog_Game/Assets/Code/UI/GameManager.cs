@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using Dino.Utility.Audio;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         gamePlayElements.SetActive(false);
         GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
         gameplayUI.CoinValue.text = totalCoins.ToString();
+        AudioManager.Instance.PlaySound("MainMenuThem");
     }
 
     
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
 
         StartRun();
+        AudioManager.Instance.StopSound("MainMenuThem");
+        AudioManager.Instance.PlaySound("GamePlayThem");
         
     }
 
@@ -99,6 +103,8 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
             UiManager.Instance.ShowWindow(WindowsIds.GameOverUI);
+            AudioManager.Instance.StopSound("GamePlayThem");
+            AudioManager.Instance.PlaySound("MainMenuThem");
             GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
             gameOverUI.CoinFinalValue.text = totalCoins.ToString();
             
@@ -164,6 +170,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+    /*
     #region Store Fuctions
     public void OnBackStoreButtonClick()
     { 
@@ -202,6 +209,7 @@ public class GameManager : MonoBehaviour
         
     }
     #endregion
+    */
     #region  Settings Fuctions
 
     public void OnBackSettindsButtonClick()

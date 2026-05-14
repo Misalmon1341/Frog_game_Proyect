@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: MainTheme
   m_EditorClassIdentifier: Assembly-CSharp::Dino.Utility.Audio.AudioManagerData
   audioData:
-  - name: click
-    clip: {fileID: 8300000, guid: 825d0ecac495b87439390dd2f173b000, type: 3}
-    loop: 0
-    volume: 1
+  - name: MainMenuThem
+    clip: {fileID: 8300000, guid: 0ad591428b0c18c4da51fe3bf98dbc63, type: 3}
+    loop: 1
+    volume: 0.7
     pitch: 1
-    audioType: 1
+    audioType: 0
+  - name: GamePlayThem
+    clip: {fileID: 8300000, guid: bef0cef2ded0f0645ad90c6e5bdd4965, type: 3}
+    loop: 1
+    volume: 0.7
+    pitch: 1
+    audioType: 0

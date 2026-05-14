@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
@@ -7,7 +8,8 @@ public class ItemUI : MonoBehaviour
 {
     [SerializeField]private Image icon;
     [SerializeField]private TextMeshProUGUI itemName;
-    
+    [SerializeField]private Button itemButton;
+    public Button ItemButton => itemButton;
     [Button]
     public void SetItemData(ItemData itemData)
     {

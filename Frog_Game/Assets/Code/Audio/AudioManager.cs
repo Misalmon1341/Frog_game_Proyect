@@ -28,7 +28,7 @@ namespace Dino.Utility.Audio
             private List<AudioData> _sfxAudioData = new List<AudioData>();
             private List<AudioData> _musicAudioData = new List<AudioData>();
 
-            private AudioManager Instance { get; set; }
+            public static AudioManager Instance { get; set; }
             
             #endregion
 

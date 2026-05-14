@@ -26,7 +26,9 @@ public class StoreUI : UIWindow
         foreach (var itemData in _itemData)
         {
             GameObject itemGo = Instantiate(_itemPrefab, _itemContainer); 
-            itemGo.GetComponent<ItemUI>().SetItemData(itemData);
+            ItemUI itemUi = itemGo.GetComponent<ItemUI>();
+            itemUi.SetItemData(itemData);
+            itemUi.ItemButton.onClick.AddListener(() => StoreManager.Instance.ShowPurchasePanel(itemUi.ItemButton));
         }
         
     }
@@ -40,9 +42,9 @@ public class StoreUI : UIWindow
     }
       public override void Show()
         {
-            backBtnStore.onClick.AddListener(() => { GameManager.Instance.OnBackStoreButtonClick();});
-            cosmeticButton.onClick.AddListener(() => { GameManager.Instance.OnCosmeticButtonClick();});
-            inventoryButton.onClick.AddListener(() => { GameManager.Instance.OnInventoryButtonClick();});
+            backBtnStore.onClick.AddListener(() => { StoreManager.Instance.OnBackStoreButtonClick();});
+            cosmeticButton.onClick.AddListener(() => { StoreManager.Instance.OnCosmeticButtonClick();});
+            inventoryButton.onClick.AddListener(() => { StoreManager.Instance.OnInventoryButtonClick();});
             base.Show();
         }
     
@@ -52,5 +54,6 @@ public class StoreUI : UIWindow
             cosmeticButton.onClick.RemoveAllListeners();
             inventoryButton.onClick.RemoveAllListeners();
             base.Hide();
+            
         }
 }
