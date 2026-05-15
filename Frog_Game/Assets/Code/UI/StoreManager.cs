@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using DG.Tweening;
+using Dino.Utility.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,12 +21,14 @@ public class StoreManager : MonoBehaviour
     
     public void OnBackStoreButtonClick()
     { 
+        AudioManager.Instance.PlaySound("uiclickneutral");
         StoreUI storeUI = UiManager.Instance.GetWindow(WindowsIds.StoreUI) as StoreUI;
         UiManager.Instance.CloseWindow(WindowsIds.StoreUI);
         UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
     }
     public void OnCosmeticButtonClick()
     { 
+        AudioManager.Instance.PlaySound("uiclickpositive");
         StoreUI storeUI = UiManager.Instance.GetWindow(WindowsIds.StoreUI) as StoreUI;
         storeUI.CosmeticButton.image.sprite = storeUI.ActiveButtonSprt;
         storeUI.InventoryButton.image.sprite = storeUI.DissabledButtonSprt;
@@ -41,6 +44,7 @@ public class StoreManager : MonoBehaviour
     
     public void OnInventoryButtonClick()
     { 
+        AudioManager.Instance.PlaySound("uiclickpositive");
         StoreUI storeUI = UiManager.Instance.GetWindow(WindowsIds.StoreUI) as StoreUI;
         storeUI.InventoryButton.image.sprite = storeUI.ActiveButtonSprt;
         storeUI.CosmeticButton.image.sprite = storeUI.DissabledButtonSprt;

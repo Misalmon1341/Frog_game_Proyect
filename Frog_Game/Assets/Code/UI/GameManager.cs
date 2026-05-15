@@ -36,9 +36,11 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
         UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
+        
 
         StartRun();
         AudioManager.Instance.StopSound("MainMenuThem");
@@ -61,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void OnStoreButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
         UiManager.Instance.ShowWindow(WindowsIds.StoreUI);
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
@@ -68,6 +71,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnSettingsClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
         UiManager.Instance.ShowWindow(WindowsIds.SettingsUI);
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
@@ -75,6 +79,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnCreditsClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
         UiManager.Instance.ShowWindow(WindowsIds.CreditsUI);
         UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
@@ -88,6 +93,7 @@ public class GameManager : MonoBehaviour
 
     public void OnPauseButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclickneutral");
         Time.timeScale = 0;
         GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
         UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
@@ -137,6 +143,7 @@ public class GameManager : MonoBehaviour
 
     public void OnResumeButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
         UiManager.Instance.CloseWindow(WindowsIds.PauseUI);
         UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
@@ -145,6 +152,7 @@ public class GameManager : MonoBehaviour
 
     public void OnExitButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclicknegative");
         PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
@@ -156,12 +164,14 @@ public class GameManager : MonoBehaviour
 
     public void OnExitGameOverButtonClickk()
     {
+        AudioManager.Instance.PlaySound("uiclicknegative");
         GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
     public void OnRetryButtonClick()
     {
+        AudioManager.Instance.PlaySound("uiclickpositive");
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
         MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI;
@@ -214,6 +224,7 @@ public class GameManager : MonoBehaviour
 
     public void OnBackSettindsButtonClick()
     { 
+        AudioManager.Instance.PlaySound("uiclickneutral");
         SettingsUI settings = UiManager.Instance.GetWindow(WindowsIds.SettingsUI) as SettingsUI;
         UiManager.Instance.CloseWindow(WindowsIds.SettingsUI);
         UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
@@ -223,6 +234,7 @@ public class GameManager : MonoBehaviour
 
     public void OnBackButtonClick()
     { 
+        AudioManager.Instance.PlaySound("uiclickneutral");
         CreditsUI creditsUi = UiManager.Instance.GetWindow(WindowsIds.CreditsUI) as CreditsUI;
         UiManager.Instance.CloseWindow(WindowsIds.CreditsUI);
         UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);

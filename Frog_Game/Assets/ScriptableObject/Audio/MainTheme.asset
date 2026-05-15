@@ -16,12 +16,36 @@ MonoBehaviour:
   - name: MainMenuThem
     clip: {fileID: 8300000, guid: 0ad591428b0c18c4da51fe3bf98dbc63, type: 3}
     loop: 1
-    volume: 0.7
+    volume: 0.6
     pitch: 1
     audioType: 0
   - name: GamePlayThem
     clip: {fileID: 8300000, guid: bef0cef2ded0f0645ad90c6e5bdd4965, type: 3}
     loop: 1
-    volume: 0.7
+    volume: 0.6
     pitch: 1
     audioType: 0
+  - name: uiclickpositive
+    clip: {fileID: 8300000, guid: 16c2014c8ef50476c8d7b7b8f1e3205f, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: uiclickneutral
+    clip: {fileID: 8300000, guid: 0072dd13ef3ac4e68ac08295a28df10e, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: uiclicknegative
+    clip: {fileID: 8300000, guid: 4af952e562e5246c7841f682b6b126ad, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: uiclickspecial
+    clip: {fileID: 8300000, guid: a0f6b0b611d474beab95e07a195f851e, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1

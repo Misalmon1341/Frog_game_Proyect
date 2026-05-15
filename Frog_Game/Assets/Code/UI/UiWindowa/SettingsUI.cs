@@ -1,3 +1,4 @@
+using Dino.Utility.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,10 +20,12 @@ public class SettingsUI : UIWindow
 
     public void OnSfxValueChange(float value)
     {
+        AudioManager.Instance.PlaySound("uiclickspecial");
         SettingsManager.Instance.SetSfxValue(value);
     }
     public void OnMusicValueChange(float value)
     {
+        AudioManager.Instance.PlaySound("uiclickspecial");
         SettingsManager.Instance.SetMusicValue(value);   
     }
     
