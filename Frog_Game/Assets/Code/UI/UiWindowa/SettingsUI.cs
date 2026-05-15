@@ -32,7 +32,7 @@ public class SettingsUI : UIWindow
 
     public override void Show()
     {
-        backSettingsButton.onClick.AddListener(() => {GameManager.Instance.OnBackSettindsButtonClick();});
+        backSettingsButton.onClick.AddListener(() => {OnBackSettindsButtonClick();});
         base.Show();
     }
 
@@ -40,5 +40,11 @@ public class SettingsUI : UIWindow
     {
         backSettingsButton.onClick.RemoveAllListeners();
         base.Hide();
+    }
+    public void OnBackSettindsButtonClick()
+    { 
+        AudioManager.Instance.PlaySound("uiclickneutral");
+        UiManager.Instance.CloseWindow(WindowsIds.SettingsUI);
+        UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
     }
 }

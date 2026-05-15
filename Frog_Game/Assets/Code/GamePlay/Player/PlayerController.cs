@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Dino.Utility.Audio;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -42,13 +43,15 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Golpeo al juagdor");
+            AudioManager.Instance.PlaySound("damagesound");
+            Debug.Log("Golpeo al juagdor"); 
             playerAnimator.SetBool("Run", false);
             playerAnimator.SetBool("Hurt", true);
             GameManager.Instance.LostHearts();
         }
         if (other.gameObject.CompareTag("Heart"))
         {
+            AudioManager.Instance.PlaySound("hearthsound");
             bool heartRetrieve = GameManager.Instance.WinHearts();
             if (heartRetrieve)
             {
@@ -57,6 +60,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Coin"))
         {
+            AudioManager.Instance.PlaySound("coinsound");
             GameManager.Instance.AddCoins(coinValue);
             Destroy(other.gameObject);
         }
@@ -88,6 +92,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            AudioManager.Instance.PlaySound("jumpsound");
             playerAnimator.SetBool("Run", false);
             playerAnimator.SetBool("Jump", true);
             rb.AddForce(Vector2.up * jumpforce);
@@ -104,8 +109,12 @@ public class PlayerController : MonoBehaviour
         }
         
         if (Input.GetKeyUp(KeyCode.LeftShift) && isGrounded)
-        {
+        {   
             playerAnimator.SetBool("Crouch", false);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
+        {   
+            AudioManager.Instance.PlaySound("crouchsound");
         }
         
     }

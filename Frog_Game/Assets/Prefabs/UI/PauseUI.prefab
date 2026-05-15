@@ -1383,6 +1383,8 @@ MonoBehaviour:
   easeOut: 27
   resumeButton: {fileID: 544546998885124115}
   exitButton: {fileID: 214757719954142714}
+  musicSlide: {fileID: 7149169917152646421}
+  sfxSlide: {fileID: 3107860824873576838}
 --- !u!1 &4415521709066256391
 GameObject:
   m_ObjectHideFlags: 0

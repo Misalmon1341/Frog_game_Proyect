@@ -34,71 +34,19 @@ public class GameManager : MonoBehaviour
     
     #region MainMenu Fuctions
 
-    public void OnPlayButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
-        UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
-        UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
-        
-
-        StartRun();
-        AudioManager.Instance.StopSound("MainMenuThem");
-        AudioManager.Instance.PlaySound("GamePlayThem");
-        
-    }
-
-    private void StartRun()
+   
+    public void StartRun()
     {
         // Reset player pos => Player manager
         // Reset coins => Currency manager
         // Reset lifes => PlayerManager
         // Reset enemies => Enemies Manager
         // Move background => Background
-
-
-
         gamePlayElements.SetActive(true);
     }
-
-    public void OnStoreButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
-        UiManager.Instance.ShowWindow(WindowsIds.StoreUI);
-        UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
-        //mainMenuUI.StoreButton.onClick.RemoveAllListeners();
-    }
-    public void OnSettingsClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
-        UiManager.Instance.ShowWindow(WindowsIds.SettingsUI);
-        UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
-        //mainMenuUI.SettingsButton.onClick.RemoveAllListeners();
-    }
-    public void OnCreditsClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI; 
-        UiManager.Instance.ShowWindow(WindowsIds.CreditsUI);
-        UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
-        //mainMenuUI.CreditsButton.onClick.RemoveAllListeners();
-    }
-
-   
-
     #endregion
     #region Gameplay Fuctions
-
-    public void OnPauseButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickneutral");
-        Time.timeScale = 0;
-        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
-        UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
-        UiManager.Instance.ShowWindow(WindowsIds.PauseUI);
-    }
+    
 
     public void LostHearts()
     {   
@@ -106,6 +54,7 @@ public class GameManager : MonoBehaviour
         totalHearts -= 1;
         if (totalHearts == 0)
         {
+            AudioManager.Instance.StopSound("deathsound");
             Time.timeScale = 0;
             UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
             UiManager.Instance.ShowWindow(WindowsIds.GameOverUI);
@@ -137,48 +86,6 @@ public class GameManager : MonoBehaviour
         gameplayUI.CoinValue.text = totalCoins.ToString();
     }
     
-    #endregion
-
-    #region Pause Functions
-
-    public void OnResumeButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
-        UiManager.Instance.CloseWindow(WindowsIds.PauseUI);
-        UiManager.Instance.ShowWindow(WindowsIds.GameplayUI);
-        Time.timeScale = 1;
-    }
-
-    public void OnExitButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclicknegative");
-        PauseUI pauseUI = UiManager.Instance.GetWindow(WindowsIds.PauseUI) as PauseUI;
-        Time.timeScale = 1;
-        SceneManager.LoadScene(0);
-    }
-
-    #endregion
-
-    #region GameOver Functions
-
-    public void OnExitGameOverButtonClickk()
-    {
-        AudioManager.Instance.PlaySound("uiclicknegative");
-        GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
-        Time.timeScale = 1;
-        SceneManager.LoadScene(0);
-    }
-    public void OnRetryButtonClick()
-    {
-        AudioManager.Instance.PlaySound("uiclickpositive");
-        SceneManager.LoadScene(0);
-        Time.timeScale = 1;
-        MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI;
-        mainMenuUI.HideOnStart = true;
-        //UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
-    }
-
     #endregion
     /*
     #region Store Fuctions
@@ -220,26 +127,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
     */
-    #region  Settings Fuctions
-
-    public void OnBackSettindsButtonClick()
-    { 
-        AudioManager.Instance.PlaySound("uiclickneutral");
-        SettingsUI settings = UiManager.Instance.GetWindow(WindowsIds.SettingsUI) as SettingsUI;
-        UiManager.Instance.CloseWindow(WindowsIds.SettingsUI);
-        UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
-    }
-    #endregion
-    #region  Credits Fuctions
-
-    public void OnBackButtonClick()
-    { 
-        AudioManager.Instance.PlaySound("uiclickneutral");
-        CreditsUI creditsUi = UiManager.Instance.GetWindow(WindowsIds.CreditsUI) as CreditsUI;
-        UiManager.Instance.CloseWindow(WindowsIds.CreditsUI);
-        UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
-    }
-    #endregion
+    
     #region PopUp Functions
       [Button]
     public void ChangeText()

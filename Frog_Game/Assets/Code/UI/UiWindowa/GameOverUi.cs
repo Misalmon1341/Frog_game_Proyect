@@ -1,5 +1,7 @@
+using Dino.Utility.Audio;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverUi : UIWindow
@@ -17,8 +19,8 @@ public class GameOverUi : UIWindow
        public override void Show()
        {
            base.Show();
-           retryButton.onClick.AddListener(() => {GameManager.Instance.OnRetryButtonClick();});
-           exitButton.onClick.AddListener(() => {GameManager.Instance.OnExitGameOverButtonClickk();});
+           retryButton.onClick.AddListener(() => {OnRetryButtonClick();});
+           exitButton.onClick.AddListener(() => {OnExitGameOverButtonClickk();});
        }
 
     
@@ -29,5 +31,19 @@ public class GameOverUi : UIWindow
            exitButton.onClick.RemoveAllListeners();
            retryButton.onClick.RemoveAllListeners();
        }
-       
+       public void OnExitGameOverButtonClickk()
+       {
+           AudioManager.Instance.PlaySound("uiclicknegative");
+           Time.timeScale = 1;
+           SceneManager.LoadScene(0);
+       }
+       public void OnRetryButtonClick()
+       {
+           AudioManager.Instance.PlaySound("uiclickpositive");
+           SceneManager.LoadScene(0);
+           Time.timeScale = 1;
+           MainMenuUI mainMenuUI = UiManager.Instance.GetWindow(WindowsIds.MainMenuUI) as MainMenuUI;
+           mainMenuUI.HideOnStart = true;
+           //UiManager.Instance.CloseWindow(WindowsIds.MainMenuUI);
+       }
 }

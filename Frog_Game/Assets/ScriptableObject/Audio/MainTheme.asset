@@ -49,3 +49,39 @@ MonoBehaviour:
     volume: 0.9
     pitch: 1
     audioType: 1
+  - name: jumpsound
+    clip: {fileID: 8300000, guid: 0121a659315624d7a96e98abd2d2a16d, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: coinsound
+    clip: {fileID: 8300000, guid: af2435b78ba5d44beab25e91ad49efb7, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: hearthsound
+    clip: {fileID: 8300000, guid: 7cc7d37818ed341adae32e6fe9d640b5, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: damagesound
+    clip: {fileID: 8300000, guid: 39d95322e08d84fc88a217e689779f38, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: deathsound
+    clip: {fileID: 8300000, guid: 1dc177c9d0d8347d0b0a178593807e77, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
+  - name: crouchsound
+    clip: {fileID: 8300000, guid: 3907b9a66967648e0bd353f41fa2b1e5, type: 3}
+    loop: 0
+    volume: 0.9
+    pitch: 1
+    audioType: 1
