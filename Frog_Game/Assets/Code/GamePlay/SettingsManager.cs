@@ -1,4 +1,5 @@
 using System;
+using Dino.Utility.Audio;
 using NaughtyAttributes;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
@@ -25,7 +26,6 @@ public class SettingsManager : MonoBehaviour
         ReadSeetings();
     }
 
-
     public void ReadSeetings()
     {
         musicValue = PlayerPrefs.GetFloat(PlayerPreKeys.musicValue);
@@ -37,6 +37,7 @@ public class SettingsManager : MonoBehaviour
     {
         musicValue = value;
         PlayerPrefs.SetFloat(PlayerPreKeys.musicValue, musicValue);
+        AudioManager.Instance.UpdateAudioMixerGroupVolume(MusicValue, Dino.Utility.Audio.AudioType.Music);
         Debug.Log("Se gardo el volumen de la musica");
     }
 
@@ -44,6 +45,7 @@ public class SettingsManager : MonoBehaviour
     {
         sfxValue = value;
         PlayerPrefs.SetFloat(PlayerPreKeys.sfxValue, sfxValue);
+        AudioManager.Instance.UpdateAudioMixerGroupVolume(SfxValue, Dino.Utility.Audio.AudioType.SFX);
         Debug.Log("Se gardo el volumen de la musica");
     }
 

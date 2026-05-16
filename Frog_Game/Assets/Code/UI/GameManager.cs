@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
         gameplayUI.CoinValue.text = totalCoins.ToString();
         AudioManager.Instance.PlaySound("MainMenuThem");
+        Debug.Log("Se esta reproduciendo");
     }
 
     
