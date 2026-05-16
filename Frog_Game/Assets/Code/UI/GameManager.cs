@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         totalHearts -= 1;
         if (totalHearts == 0)
         {
-            AudioManager.Instance.StopSound("deathsound");
+            AudioManager.Instance.PlaySound("deathsound");
             Time.timeScale = 0;
             UiManager.Instance.CloseWindow(WindowsIds.GameplayUI);
             UiManager.Instance.ShowWindow(WindowsIds.GameOverUI);
