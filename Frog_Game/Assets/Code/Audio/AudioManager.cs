@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Dino.Utility.Audio;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.Rendering;
 using AudioType = Dino.Utility.Audio.AudioType;
