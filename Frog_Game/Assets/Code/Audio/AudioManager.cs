@@ -105,6 +105,7 @@ namespace Dino.Utility.Audio
             switch (audioType)
             {
                 case AudioType.Music:
+                    audioSource.outputAudioMixerGroup = _audioManagerData.MusicAudioMixerGroup;
                     break;
                 case AudioType.SFX:
                     audioSource.outputAudioMixerGroup = _audioManagerData.SfxAudioMixerGroup;
