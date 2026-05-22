@@ -7,10 +7,14 @@ using UnityEngine.UI;
 public class GamePlayUi : UIWindow
 {
      [SerializeField] private Button pauseButton;
+     [SerializeField] private Button jumpButton;
+     [SerializeField] private Button crouchButton;
      [SerializeField] private GameObject[] hearts;
      [SerializeField] private TextMeshProUGUI coinValue;
      [SerializeField] private TextMeshProUGUI distanceValue;
      public Button PauseButton => pauseButton;
+     public Button JumpButton => jumpButton;
+     public Button CrouchButton => crouchButton;
      public GameObject[] Hearts => hearts;
      public TextMeshProUGUI CoinValue => coinValue;
      public TextMeshProUGUI DistanceValue => distanceValue;

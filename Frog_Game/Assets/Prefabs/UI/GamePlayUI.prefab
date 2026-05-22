@@ -522,6 +522,8 @@ MonoBehaviour:
   easeIn: 26
   easeOut: 27
   pauseButton: {fileID: 2259642340842033216}
+  jumpButton: {fileID: 5752038497502776155}
+  crouchButton: {fileID: 895624844937039165}
   hearts:
   - {fileID: 4640728339373398141}
   - {fileID: 3825647263248024440}
@@ -902,7 +904,7 @@ GameObject:
   - component: {fileID: 1514229310166860155}
   - component: {fileID: 895624844937039165}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: CrouchButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1500,7 +1502,7 @@ GameObject:
   - component: {fileID: 841522636586427698}
   - component: {fileID: 5752038497502776155}
   m_Layer: 0
-  m_Name: Button
+  m_Name: JumpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

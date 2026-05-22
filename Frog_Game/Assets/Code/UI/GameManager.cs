@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        distanceCounter += Time.deltaTime * 3f;
+        distanceCounter += Time.deltaTime * 10f;
         GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
         gameplayUI.DistanceValue.text = distanceCounter.ToString("f0");
     }
