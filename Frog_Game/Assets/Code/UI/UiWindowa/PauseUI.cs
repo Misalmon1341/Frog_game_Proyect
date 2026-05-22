@@ -43,6 +43,7 @@ public class PauseUI : UIWindow
 
     public void OnExitButtonClick()
     {
+        AudioManager.Instance.StopSound("GamePlayThem");
         AudioManager.Instance.PlaySound("uiclicknegative");
         Time.timeScale = 1;
         SceneManager.LoadScene(0);

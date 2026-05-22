@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Heart"))
         {
-            AudioManager.Instance.PlaySound("hearthsound");
             bool heartRetrieve = GameManager.Instance.WinHearts();
             if (heartRetrieve)
             {

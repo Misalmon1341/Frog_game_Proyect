@@ -9,9 +9,11 @@ public class GamePlayUi : UIWindow
      [SerializeField] private Button pauseButton;
      [SerializeField] private GameObject[] hearts;
      [SerializeField] private TextMeshProUGUI coinValue;
+     [SerializeField] private TextMeshProUGUI distanceValue;
      public Button PauseButton => pauseButton;
      public GameObject[] Hearts => hearts;
      public TextMeshProUGUI CoinValue => coinValue;
+     public TextMeshProUGUI DistanceValue => distanceValue;
         public override void Show()
         {
             pauseButton.onClick.AddListener(() =>{OnPauseButtonClick();});

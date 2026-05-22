@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private int totalHearts = 3;
     private int totalCoins = 0;
+    public float speedMultiplier;
+    private float distanceCounter;
 
     private void Awake()
     {
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        distanceCounter = 0;
         UiManager.Instance.ShowWindow(WindowsIds.MainMenuUI);
         gamePlayElements.SetActive(false);
         GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
@@ -32,7 +35,14 @@ public class GameManager : MonoBehaviour
         Debug.Log("Se esta reproduciendo");
     }
 
-    
+    private void Update()
+    {
+        distanceCounter += Time.deltaTime * 3f;
+        GamePlayUi gameplayUI = UiManager.Instance.GetWindow(WindowsIds.GameplayUI) as GamePlayUi;
+        gameplayUI.DistanceValue.text = distanceCounter.ToString("f0");
+    }
+
+
     #region MainMenu Fuctions
 
    
@@ -63,6 +73,7 @@ public class GameManager : MonoBehaviour
             AudioManager.Instance.PlaySound("MainMenuThem");
             GameOverUi gameOverUI = UiManager.Instance.GetWindow(WindowsIds.GameOverUI) as GameOverUi;
             gameOverUI.CoinFinalValue.text = totalCoins.ToString();
+            gameOverUI.DistanceFinalValue.text = distanceCounter.ToString("f0");
             
         }
         gameplayUI.DissabledHeart(totalHearts);
@@ -75,6 +86,7 @@ public class GameManager : MonoBehaviour
         {
             return false;
         }
+        AudioManager.Instance.PlaySound("hearthsound");
         gameplayUI.ActiveHeart(totalHearts);
         totalHearts += 1;
         return true;

@@ -65,7 +65,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: af2435b78ba5d44beab25e91ad49efb7, type: 3}
     loop: 0
     volume: 0.9
-    pitch: 1.76
+    pitch: 1.5
     audioType: 1
   - name: hearthsound
     clip: {fileID: 8300000, guid: 7cc7d37818ed341adae32e6fe9d640b5, type: 3}

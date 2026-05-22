@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 252}
+  m_AnchoredPosition: {x: 0, y: 247}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3487369279186296744
@@ -78,7 +78,18 @@ MonoBehaviour:
 
     Art Designer
 
-    Angel Coronado'
+    Angel Coronado
+
+
+    Game Music
+
+    GWriterStudio
+
+
+    Game
+    SFX
+
+    Game Sound Solutions'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01aee47762d704644a08d3a77fa8dc05, type: 2}
   m_sharedMaterial: {fileID: 524206998584689966, guid: 01aee47762d704644a08d3a77fa8dc05, type: 2}
@@ -105,7 +116,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.75
+  m_fontSize: 55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -118,7 +129,7 @@ MonoBehaviour:
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -26.7
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

@@ -9,9 +9,10 @@ public class GameOverUi : UIWindow
       [SerializeField] private Button retryButton;
       [SerializeField] private Button exitButton;
       [SerializeField] private TextMeshProUGUI coinFinalValue;
+      [SerializeField] private TextMeshProUGUI distanceFinalValue;
       
       public TextMeshProUGUI CoinFinalValue => coinFinalValue;
-      
+      public TextMeshProUGUI DistanceFinalValue => distanceFinalValue;
       public override void Initialize()
       {
           base.Initialize();

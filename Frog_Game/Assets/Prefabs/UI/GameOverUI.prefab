@@ -1053,6 +1053,7 @@ MonoBehaviour:
   retryButton: {fileID: 5526542716798137926}
   exitButton: {fileID: 1686252462795182347}
   coinFinalValue: {fileID: 6698962282693939157}
+  distanceFinalValue: {fileID: 6277901787109397938}
 --- !u!1 &5079667902902582882
 GameObject:
   m_ObjectHideFlags: 0
