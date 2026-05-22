@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: aad03d4a3bfa2d043bdfcfd045f30af9
+guid: 2884234aa9f1d8b4690a3ab259872b78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5993750029687101856
-    second: Icon_ExclamationMark_0
+      213: -4883497448609011186
+    second: BackGround1_V002_0
+  - first:
+      213: 6234252825552052460
+    second: BackGround1_V002_1
+  - first:
+      213: 8399960679045184570
+    second: BackGround1_V002_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,18 +46,18 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_ExclamationMark_0
+      name: BackGround1_V002_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 3
-        height: 9
+        y: 19
+        width: 164
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0666300ba1ce1dca0800000000000000
-      internalID: -5993750029687101856
+      spriteID: e0a2222c1f45a3cb0800000000000000
+      internalID: -4883497448609011186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackGround1_V002_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 31
+        width: 67
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce061031ae3848650800000000000000
+      internalID: 6234252825552052460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackGround1_V002_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 21
+        width: 68
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cbcb19bb7a29470800000000000000
+      internalID: 8399960679045184570
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon_ExclamationMark_0: -5993750029687101856
+      BackGround1_V002_0: -4883497448609011186
+      BackGround1_V002_1: 6234252825552052460
+      BackGround1_V002_2: 8399960679045184570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

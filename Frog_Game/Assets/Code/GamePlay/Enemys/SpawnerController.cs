@@ -16,7 +16,7 @@ public class SpawnerController : MonoBehaviour
 
     private void Update()
     {
-        GameManager.Instance.speedMultiplier += Time.deltaTime * 0.02f;
+        GameManager.Instance.speedMultiplier += Time.deltaTime * 0.01f;
         timer += Time.deltaTime;
         if (timer > timeBetweenSpawns )
         {
