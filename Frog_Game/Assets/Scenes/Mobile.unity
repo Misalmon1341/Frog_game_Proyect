@@ -1917,9 +1917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2724bbb999d9cb446a4b44709958aea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  jumpforce: 450
+  jumpforce: 0
   maxHealth: 0
-  coinValue: 3
+  coinValue: 0
 --- !u!50 &603287173
 Rigidbody2D:
   serializedVersion: 5
@@ -7280,7 +7280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022385248017963189, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00042180764
+      value: 0.0000007068697
       objectReference: {fileID: 0}
     - target: {fileID: 7022385248017963189, guid: 19df5ce753c4c2a44af531df3ff0bf72, type: 3}
       propertyPath: m_AnchoredPosition.y

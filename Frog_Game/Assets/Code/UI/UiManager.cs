@@ -96,7 +96,7 @@ public class UiManager : MonoBehaviour
         {
             if (window.WindowId == windowId)
             {
-                Debug.Log("Found Window");
+               // Debug.Log("Found Window");
                 return window;
             }
         }

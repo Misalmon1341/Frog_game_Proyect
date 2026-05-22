@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d4c840e7f8088fd45818631c08c3e0a2
+guid: c7b7128fafd79294f8ca9c7e84c8899a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8280993704222046582
-    second: Small_Arrow_Down_0
+      213: 6464969139033053116
+    second: SquareButton_Gold_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Small_Arrow_Down_0
+      name: SquareButton_Gold_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8
-        height: 8
+        width: 15
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 5, z: 4, w: 5}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 679b66f36effbe270800000000000000
-      internalID: 8280993704222046582
+      spriteID: cb79de7dd2f28b950800000000000000
+      internalID: 6464969139033053116
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 66262568027f0b34b944b514c7dd795c
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Small_Arrow_Down_0: 8280993704222046582
+      SquareButton_Gold_0: 6464969139033053116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
