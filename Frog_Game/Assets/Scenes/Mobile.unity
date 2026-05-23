@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gamePlayElements: {fileID: 207393870}
-  speedMultiplier: 0.08
+  speedMultiplier: 0
 --- !u!4 &213561172
 Transform:
   m_ObjectHideFlags: 0
